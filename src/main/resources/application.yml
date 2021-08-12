@@ -1,6 +1,11 @@
 spring:
   autoconfigure:
     exclude: "org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration,org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration,org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration,org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration"
-logging.level.org.apereo.cas: debug
+logging:
+  level:
+     org.apereo.cas: debug
+     org.relections: info
+     org.springframework: info
+
 server:
   port: 8443

@@ -34,27 +34,8 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation "org.apereo.cas:cas-server-webapp-init-tomcat:${casVersion}"
 	implementation "org.apereo.cas:cas-server-webapp-init:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-audit:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-authentication:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-configuration:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-cookie:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-logout:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-logging:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-services:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-tickets:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-util:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-validation:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-web:${casVersion}"
-	implementation "org.apereo.cas:cas-server-core-notifications:${casVersion}"
-
-	implementation "org.apereo.cas:cas-server-support-actions:${casVersion}"
-	implementation "org.apereo.cas:cas-server-support-person-directory:${casVersion}"
-	implementation "org.apereo.cas:cas-server-support-themes:${casVersion}"
-	implementation "org.apereo.cas:cas-server-support-validation:${casVersion}"
-	implementation "org.apereo.cas:cas-server-support-thymeleaf:${casVersion}"
-	implementation "org.apereo.cas:cas-server-support-pm-webflow:${casVersion}"
 }
+
 
 test {
 	useJUnitPlatform()
