@@ -7,6 +7,3 @@ logging:
     org.apereo.cas: debug
     org.relections: info
     org.springframework: info
-
-server:
-  port: 8443

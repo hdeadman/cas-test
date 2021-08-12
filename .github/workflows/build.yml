@@ -57,6 +57,7 @@ jobs:
         run: |
           java -jar build/libs/cas-0.0.1-SNAPSHOT.jar &
           sleep 90
+          curl -k https://localhost:8443/cas/login
       - uses: actions/upload-artifact@v2
         if: ${{ matrix.os == 'ubuntu-latest' }}
         with:
