@@ -57,7 +57,7 @@ jobs:
         run: |
           sudo mkdir -p /etc/cas
           sudo chmod 777 /etc/cas
-          keytool -genkey -alias cas -keyalg RSA -validity 999 -keystore /etc/cas/thekeystore -ext san=dns:localhost
+          keytool -genkey -noprompt -alias cas -keyalg RSA -keypass changeit -storepass changeit -keystore /etc/cas/thekeystore -dname CN=cas.example.org,OU=Example,OU=Org,C=US -ext SAN="dns:example.org,dns:localhost,ip:127.0.0.1"
           java -jar build/libs/cas-0.0.1-SNAPSHOT.jar &
           sleep 90
           curl -k https://localhost:8443/cas/login
