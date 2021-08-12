@@ -55,6 +55,8 @@ jobs:
         run: ./gradlew --build-cache --no-watch-fs --configure-on-demand --no-daemon clean build
       - name: Run CAS
         run: |
+          mkdir -p /etc/cas
+          keytool -genkey -alias cas -keyalg RSA -validity 999 -keystore /etc/cas/thekeystore -ext san=dns:localhost
           java -jar build/libs/cas-0.0.1-SNAPSHOT.jar &
           sleep 90
           curl -k https://localhost:8443/cas/login
