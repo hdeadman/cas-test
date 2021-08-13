@@ -29,6 +29,12 @@ repositories {
 	maven { url 'https://repo.spring.io/snapshot' }
 }
 
+dependencyManagement {
+	imports {
+        mavenBom "org.apereo.cas:cas-server-support-bom:${casVersion}"
+    }
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
@@ -57,6 +63,9 @@ dependencies {
 	implementation "org.apereo.cas:cas-server-support-pm-webflow:${casVersion}"
 }
 
+configurations {
+	all*.exclude module : 'spring-boot-starter-logging'
+}
 
 test {
 	useJUnitPlatform()
