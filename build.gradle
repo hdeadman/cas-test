@@ -37,6 +37,8 @@ dependencyManagement {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation "org.webjars:webjars-locator-core:${webjarsLocatorVersion}"
+
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation "org.apereo.cas:cas-server-webapp-init-tomcat:${casVersion}"
 	implementation "org.apereo.cas:cas-server-webapp-init:${casVersion}"

@@ -1,6 +1,6 @@
 spring:
   autoconfigure:
-    exclude: "org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration,org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration,org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration"
+    exclude: "org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration,org.springframework.boot.autoconfigure.webservices.WebServicesAutoConfiguration"
 logging:
   level:
     root: info
