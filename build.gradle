@@ -65,6 +65,10 @@ dependencies {
 	implementation "org.apereo.cas:cas-server-support-pm-webflow:${casVersion}"
 }
 
+springBoot {
+	mainClass.set('org.apereo.cas.web.CasWebApplication')
+}
+
 configurations {
 	all*.exclude module : 'spring-boot-starter-logging'
 }
