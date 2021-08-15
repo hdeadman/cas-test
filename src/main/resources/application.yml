@@ -7,3 +7,4 @@ logging:
     org.apereo.cas: debug
     org.relections: info
     org.springframework: info
+    org.apereo.cas.authentication: trace
