@@ -40,7 +40,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation "org.apereo.cas:cas-server-webapp-tomcat-app:${casVersion}"
+	implementation "org.apereo.cas:cas-server-webapp-tomcat-starter:${casVersion}"
 
 	// needed for test class since transitive dependencies for bootjar are runtime
 	testImplementation "org.apereo.cas:cas-server-webapp-init:${casVersion}"
